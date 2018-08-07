@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="../bower_components/bulma/css/bulma.css">
+        <link rel="stylesheet" href="../bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="main.css">
+
+        <style>
+            html, body, webview {
+                height: 100%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <section id="loader" class="hero is-fullheight has-text-centered">
+            <div class="hero-body">
+                <div class="container">
+
+                    <div class="busy">
+                        <h1 class="title">
+                            <span class="icon is-large">
+                                <i class="fa fa-spinner fa-spin fa-fw"></i>
+                            </span>
+                        </h1>
+                    </div>
+
+                    <div class="failed is-hidden">
+                        <h1 class="title">Failed to Load</h1>
+                        <h2 class="subtitle">Please check your Network Connection</h2>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <webview src="about:blank"></webview>>
+
+        <script>
+            // jQuery
+            $ = require('jquery')
+            
+            // initialize render.js
+            require('./render')
+        </script>
+    </body>
+</html>
