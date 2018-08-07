@@ -1,3 +1,10 @@
+# mac folder
+.DS_Store
+
+# distribuition folders
+dist/
+private/
+
 # Logs
 logs
 *.log
